@@ -15,7 +15,7 @@ Update script to add websites/services
 
 ## Use
 ```
-git clone ...
+git clone https://github.com/CloudMyIT/THS.git
 cd THS
 chmod +x install.sh
 ./install.sh
