@@ -1,3 +1,5 @@
+read -rsp $'What is the Servers Name?\n' SERVERNAME
+
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install tor apache2 libapache2-modsecurity -y
@@ -5,9 +7,9 @@ sudo apt-get install tor apache2 libapache2-modsecurity -y
 ###
 # Set HostName
 ###
-sudo hostname darknet
-echo "darknet" | sudo tee /etc/hostname
-echo "127.0.0.1 darknet" | sudo tee -a /etc/hosts
+sudo hostname $SERVERNAME
+echo $SERVERNAME | sudo tee /etc/hostname
+echo "127.0.0.1 $SERVERNAME" | sudo tee -a /etc/hosts
 sleep 2
 
 ###
