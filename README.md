@@ -49,3 +49,10 @@ Press any key to continue...
 ```
 
 After pressing any key; all future SSH connections must be made though TOR.
+
+After reconnecting to SSH though Tor
+```
+cd THS
+./clearLogs.sh
+```
+Just to ensure any previous IP's are removed from logs.
